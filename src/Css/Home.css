@@ -1,0 +1,47 @@
+
+.photo{
+    width: 400px;
+    height: 250px;
+    margin-left: 55%;
+    margin-bottom: 200px;
+    position: absolute;
+    background-repeat: no-repeat;
+    bottom: 30px;
+    background-image: url("../images/mobile_app.png");
+    animation: change 12s infinite ;
+}
+.head{
+    max-width: 450px;
+    height: 200px;
+    margin-top: 100px;
+    margin-left: 150px;
+    background-repeat: no-repeat;
+    background-image: url("../images/appd.png");
+    animation: click 12s infinite;
+}
+   /*Sliding images*/
+@keyframes change{
+    0%{
+        background-image: url("../images/Webd1.jpg");
+    }
+    20%{
+        background-image: url("../images/margeting.png");
+    }
+    40%{
+        background-image: url("../images/ecommerece.png");
+    }
+}
+
+@keyframes click{
+    0%{
+        background-image: url("../images/websited.png"); 
+    }
+    20%{
+        background-image: url("../images/marketingd.png");
+    }
+    40%{
+        background-image: url("../images/ecommerce.png");
+    }
+};
+
+
