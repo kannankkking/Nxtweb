@@ -1,47 +1,63 @@
-
-.photo{
-    width: 400px;
-    height: 250px;
-    margin-left: 55%;
-    margin-bottom: 200px;
-    position: absolute;
+.photo {
+    width: 400px; /* Change to 100% for responsiveness */
+    max-width: 400px; /* Set a max width */
+    height: 250px; /* Adjust height to auto for maintaining aspect ratio */
+    margin: 0 auto; /* Center the photo */
+    position: relative; /* Change to relative */
     background-repeat: no-repeat;
-    bottom: 30px;
+    bottom: 30px; /* Keep as is for positioning */
     background-image: url("../images/mobile_app.png");
-    animation: change 12s infinite ;
+    animation: change 12s infinite;
 }
-.head{
+
+.head {
     max-width: 450px;
     height: 200px;
-    margin-top: 100px;
-    margin-left: 150px;
+    margin: 100px auto; /* Center the head */
     background-repeat: no-repeat;
     background-image: url("../images/appd.png");
     animation: click 12s infinite;
 }
-   /*Sliding images*/
-@keyframes change{
-    0%{
+
+/* Sliding images */
+@keyframes change {
+    0% {
         background-image: url("../images/Webd1.jpg");
     }
-    20%{
+    20% {
         background-image: url("../images/margeting.png");
     }
-    40%{
+    40% {
         background-image: url("../images/ecommerece.png");
     }
 }
 
-@keyframes click{
-    0%{
+@keyframes click {
+    0% {
         background-image: url("../images/websited.png"); 
     }
-    20%{
+    20% {
         background-image: url("../images/marketingd.png");
     }
-    40%{
+    40% {
         background-image: url("../images/ecommerce.png");
     }
-};
+}
 
+/* Media Queries */
+@media (max-width: 768px) {
+    .photo {
+        max-width: 90%; /* Adjust max width for smaller screens */
+    }
 
+    .head {
+        max-width: 100%; /* Allow head to take full width */
+        margin-top: 50px; /* Reduce margin for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .head {
+        margin-top: 30px; /* Further reduce margin for very small screens */
+    }
+}
